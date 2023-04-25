@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Interactive card details form</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="content-imgb"></div>
+
+        <div class="card-wapper">
+
+            <div class="content-target">
+
+                <div class="target-front">
+                    <div class="content-logo"></div>
+                    <div class="test">
+                        <div class="numero-tarjeta" id="numberTarget">0000 0000 0000 0000</div>
+                        <div class="content-dataTargetFront">
+                            <div class="content-textNameFront" id="name">nombre propietario</div>
+                            <div class="content-textFech" id="fecha"><span id="mesData">00</span>
+                                / <span id="yearData">00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="target-back">
+                    <div class="content-data-back">
+                        <div class="content-firma"></div>
+                        <div class="content-number-cvv" id="cvv">000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-form">
+
+                <div id="formulario" class="form-wrapper ">
+                    <div class="content-inputData">
+                        <label for="name" class="textname">cardholder name</label>
+                        <input id="inputName" type="text" class="input-data-name-card "
+                            placeholder="e.g. Jane appleseed" maxlength="25">
+                        <p id="errorName" class="mesage-error desactive">The name should only contain letters</p>
+
+                        <label for="" class="number-target">card number</label>
+                        <input id="inputCardNumber" type="text" class="input-data-name-card "
+                            placeholder="e.g 1234 5678 9123 0000" maxlength="16">
+                        <p id="errorTarjet" class="mesage-error desactive">Wrong format, numbers only</p>
+                        <!--  <p class="error-tarjeta">Wrong format, number only</p> -->
+                    </div>
+
+                    <div class="content-data-fecha">
+                        <div class="data">
+                            <label for="" class="fecha">exp. date (mm/yy)</label>
+                            <div class="input-fech">
+                                <input id="inputMes" type="text" class="input-fecha-year " placeholder="mm"
+                                    maxlength="2">
+                                <input id="inputYear" type="text" class="input-fecha-year " placeholder="yy"
+                                    maxlength="2">
+                            </div>
+                            <div class="error-mesage">
+                                <p id="errorFech" class="mesage-error desactive">Can't be blank</p>
+                            </div>
+                        </div>
+
+                        <div class="content-cvc">
+                            <label for="" class="content-cvc">cvc</label>
+                            <input id="inputCvv" type="text" class="cvc " placeholder="e.g. 123" maxlength="3">
+                            <p id="errorCvv" class="mesage-error desactive">Can't be blank</p>
+                        </div>
+
+                    </div>
+                    <div class="content-button">
+                        <button id="buttonConfirm" class="button-confirm">confirm</button>
+                    </div>
+
+
+
+                </div>
+
+                <div id="congrats" class="content-congrats deactive">
+                    <div class="content-logo-congrats"></div>
+                    <div class="content-text-congrats">
+                        <h1 class="congrats">thank you!</h1>
+                        <p class="text-congrats">we've added your card details</p>
+                    </div>
+                    <div class="content-button-continue">
+                        <button id="buttonContinue" class="continue">continue</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        </div>
+    </main>
+
+    <script src="./javaScript/index.js" type="module"></script>
+
+</body>
+
+</html>

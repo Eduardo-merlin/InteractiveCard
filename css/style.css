@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Manrope:wght@500&family=Poppins&family=Roboto+Serif:opsz,wght@8..144,600&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+
+}
+
+:root {
+    --largo-card: 27rem;
+    --ancho-card: 15rem;
+}
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.content-imgb {
+    width: 40%;
+    height: 100%;
+    background-image: url(/img/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+/* estylos para la parte de las tarjetas
+ */
+.card-wapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.content-target {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+
+
+.target-front {
+    width: var(--largo-card);
+    height: var(--ancho-card);
+    background-image: url(/img/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.content-logo {
+    width: 4rem;
+    height: 2rem;
+    background-image: url(/img/card-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.test {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.numero-tarjeta {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+}
+
+.content-dataTargetFront {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+
+}
+
+.content-textNameFront {
+    max-width: 60%;
+
+}
+
+.content-textFech {
+    letter-spacing: 2px;
+}
+
+.target-back {
+    width: var(--largo-card);
+    height: var(--ancho-card);
+    background-image: url(/img/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.content-data-back {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-firma {
+    width: 50%;
+    height: 2rem;
+    text-align: center;
+
+}
+
+.content-number-cvv {
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* stilos para el el formulario */
+
+.content-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+
+}
+
+.form-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.content-inputData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 1rem;
+}
+
+.textname {
+    width: 50%;
+    height: 2rem;
+    padding-top: 1rem;
+    opacity: .9;
+}
+
+.mesage-error {
+    width: 100%;
+    color: hsl(0, 100%, 66%);
+    font-size: .8rem;
+    opacity: .5;
+    text-transform: none;
+}
+
+.desactive {
+    display: none;
+}
+
+.number-target {
+    width: 50%;
+    height: 2rem;
+    padding-top: 1rem;
+    opacity: .9;
+}
+
+.input-data-name-card {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    opacity: .5;
+    border: black solid 2px;
+}
+
+.content-data-fecha {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.5rem;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.fecha {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+}
+
+.input-fech {
+    width: 100%;
+    opacity: .5;
+}
+
+.input-fecha-year {
+    width: 40%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border: solid black 2px;
+}
+
+.content-cvc {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    padding-left: 1rem;
+
+}
+
+.cvc {
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: .5;
+    border: solid black 2px;
+}
+
+.content-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-confirm {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: .4rem;
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.button-confirm:hover {
+    background-color: hsl(46, 2%, 34%);
+}
+
+/* stilos para el campo activo */
+
+.content-congrats {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 1rem;
+
+}
+
+.content-logo-congrats {
+    width: 7rem;
+    height: 7rem;
+    background-image: url(/img/icon-complete.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-text-congrats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.congrats {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.text-congrats {
+    width: 100%;
+    text-align: center;
+    letter-spacing: .2rem;
+    opacity: .5;
+}
+
+.content-button-continue {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.continue {
+    width: 95%;
+    height: 2.5rem;
+    border-radius: .5rem;
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.deactive {
+    display: none;
+}
+
+.error-input {
+    border: red solid 2px;
+    color: red;
+}
+
+.error-input:focus {
+    border: red solid 2px;
+    outline: none;
+    color: red;
+}
